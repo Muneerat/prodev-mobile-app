@@ -17,7 +17,7 @@ const HomeRootLayout = () => {
                 title: 'Search',
                 headerShown: true,
                 tabBarIcon: ({color}) => <Feather name="search" size={24} color={color} />,
-            }}/>
+            }}/> 
             <Tabs.Screen name="inbox" options={{
                 title: "Inbox",
                 headerShown: true,
