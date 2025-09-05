@@ -1,5 +1,5 @@
 import {View} from "react-native";
-import PropertyListingCard from "workspace/ALX/week11/prodev-mobile-app-0x05/components/common/PropertyListingCard"
+import PropertyListingCard from "../components/common/PropertyListingCard"
 import {PropertListing, PropertyListingProps} from "@/interfaces";
 
 const PropertyListing = ({listings}: PropertListing) => {

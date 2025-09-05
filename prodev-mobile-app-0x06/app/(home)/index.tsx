@@ -1,5 +1,5 @@
-import PropertyListing from "workspace/ALX/week11/prodev-mobile-app-0x05/components/PropertyListing";
-import { styles } from "@/styles/_homestyle";
+import PropertyListing from "../../components/PropertyListing";
+import { styles } from "../../styles/_homestyle";
 import { Feather } from "@expo/vector-icons";
 import {
   View,
@@ -10,7 +10,7 @@ import {
   Dimensions,
   TouchableHighlight,
 } from "react-native";
-import { FILTERS, SAMPLE_DATA } from "@/constants/data";
+import { FILTERS, SAMPLE_DATA } from "../../constants/data";
 
 const Home = () => {
   return (
@@ -36,7 +36,7 @@ const Home = () => {
           backgroundColor: "white",
         }}
       >
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        <ScrollView horizontal showsHorizontalScrollIndicator={true}>
           <View style={styles.filterGroup}>
             {FILTERS.map((filter, index) => (
               <View style={styles.filterContainer} key={index}>
@@ -44,7 +44,7 @@ const Home = () => {
                   style={{
                     flex: 1,
                   }}
-                  source={require("@/assets/images/mansion.png")}
+                  source={require("../../assets/images/mansion.png")}
                   resizeMode="contain"
                 />
                 <Text>{filter}</Text>

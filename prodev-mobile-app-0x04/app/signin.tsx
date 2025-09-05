@@ -12,7 +12,7 @@ export default function Index() {
           <Link href="/" asChild>
           <Ionicons name="arrow-back" size={25} />
           </Link>
-          <Image source={require('../assets/images/Logo.png')} />
+          <Image source={require('../assets/images/logo.png')} />
    
         </View>
         <Text style={styles.largeText}>Sign in to your</Text>
